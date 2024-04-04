@@ -12,6 +12,14 @@ This guide and rules has been edited for SomethingOS from [CrDroid ones](https:/
 - Maintainers must respect each other, any act of hate or abuse will be severely punished
 - A forum thread (usually XDA) must be made using official template and contain all the device documentation such as installation steps, download links, sources
 
+## Applying for Official
+
+- Meet all the quality requirements (described above)
+- Having a working build, fully working and public (On XDA for example), for at least 2 months.
+- Plan to keep and maintain the device
+
+Once you meet these conditions, contact @DylanAkp on telegram
+
 ## Git
 
 - Git trees should be maintained in a tidy and organized manner
@@ -23,9 +31,9 @@ This guide and rules has been edited for SomethingOS from [CrDroid ones](https:/
 - Rebasing and force-pushing is allowed as long as it doesn’t affect other users badly, e.g. don’t force-push main branch of a common dt repository until consulted with all maintainers using it
 - When force-pushing a branch it is advised to create a copy of it just in case, named _'mybranch-old'_ or _'mybranch-today's date'_
 
-### Builds quality requirements
+## Builds quality requirements
 
-#### Hardware:
+### Hardware:
 - **Audio**
     - All audio outputs that are available in stock rom must be operational
 - **RIL**
@@ -52,17 +60,17 @@ This guide and rules has been edited for SomethingOS from [CrDroid ones](https:/
     - Devices must support encryption. FDE devices should switch to FBE, FBE encryption must be enabled by default
     - Devices should be able to use latest encryption method following Google recommendations, metadata partition should be used when available
 
-#### Kernel:
+### Kernel:
 
 - Builtin kernel must not modify default hardware configuration, which is altering cpu/gpu/mem/etc frequency/voltage because of stability reasons
 - Must be built with stack protector strong
 - Must be built with selinux and seccomp enabled, audit can be disabled
 - You must not use any commit that masks disabled selinux or any other security-related feature
-#### Vendor
+### Vendor
 
 Maintainers are free to use stock-extracted blobs, blobs from other devices or leaked BSPs. However, maintainers must test them after any alteration and make sure new blobs are fully operational. They must check logcat and dmesg for any unusual output (like dlsym errors).
 
-#### Software:
+### Software:
 
 - Only production builds can be shipped (user/userdebug)
 - Official builds can be released as weekly, monthly or nightlies when needed but at least they must be released on every SomethingOS minor version update
