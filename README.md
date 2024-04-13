@@ -3,7 +3,7 @@ This guide and rules has been edited for SomethingOS from [CrDroid ones](https:/
 
 - All maintainers must have knowledge about source control tools such as _git_ and _repo_.
 - All maintainers must release device sources **publicly** on Github, including common device tree (if present), device tree and kernel
-- Device tree and device specifc sources need to be cloned via aospa.dependencies and be present on vendor_aospa
+- Device tree and device specific sources need to be cloned via aospa.dependencies and be present on vendor_aospa
 - Vendor is not mandatory due to possible proprietary code that can result in DMCA, but highly recommended also
 - All sources must be fully synced (pushed to GitHub) **prior to** every official build release
 - Device trees can be co-maintained
@@ -26,8 +26,7 @@ Once you meet these conditions, contact @DylanAkp on telegram
 - Release branches (ones that are used for official releases) must be named after current Android version AOSPA codename, e.g. Android 14 branch name -> uvite, this naming is mandatory
 - Maintainers are free to create additional backup/testing branches
 - Original commit authorship must be maintained. If you modified it by some degree (forward port, conflict fix) you can leave a signoff or add your note at the end of a commit message, e.g. _'xNombre: fixed for R'_ Commits must preserve proper and informative naming, e.g. _'sm6150-common: Add missing camera prop'_ no _'fix cam'_ or _'aldksjflkajsd'_. For kernels shortened path or affected source file must be used for name, e.g. _'block: cfq: Fix uninitialized variable'_ or _'adsprpcd: Fix memory leak'_
-- Commits mus
-- t describe the change, especially reverts. Commits without proper messages are meaningless, showing that you have no actual idea what you’re doing. Reverts without a message doesn’t let others know what problem it was causing and it is generally bad for community
+- Commits must describe the change, especially reverts. Commits without proper messages are meaningless, showing that you have no actual idea what you’re doing. Reverts without a message doesn’t let others know what problem it was causing and it is generally bad for community
 - Rebasing and force-pushing is allowed as long as it doesn’t affect other users badly, e.g. don’t force-push main branch of a common dt repository until consulted with all maintainers using it
 - When force-pushing a branch it is advised to create a copy of it just in case, named _'mybranch-old'_ or _'mybranch-today's date'_
 
