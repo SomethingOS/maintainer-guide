@@ -37,7 +37,6 @@ Once you meet these conditions, contact @DylanAkp on telegram
     - All audio outputs that are available in stock rom must be operational
 - **RIL**
     - Must be operational if it is available in stock rom, it must not crash in any case
-    - Devices should support call recording
 - **Camera**
     - Default’s system app - Aperture must be working, however can be overridden. Prebuilt camera apps extracted from stock (like _AnxCamera_) can be included only if it is fully functional and doesn’t crash randomly
 - **USB**
