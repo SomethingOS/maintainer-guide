@@ -3,7 +3,7 @@ This guide and rules has been edited for SomethingOS from [CrDroid ones](https:/
 
 - All maintainers must have knowledge about source control tools such as _git_ and _repo_.
 - All maintainers must release device sources **publicly** on Github, including common device tree (if present), device tree and kernel
-- Device tree and device specific sources need to be cloned via aospa.dependencies and be present on vendor_aospa
+- Device tree and device specific sources need to be cloned via aospa.dependencies and be present on vendor_something
 - Vendor is not mandatory due to possible proprietary code that can result in DMCA, but highly recommended also
 - All sources must be fully synced (pushed to GitHub) **prior to** every official build release
 - Device trees can be co-maintained
@@ -15,7 +15,7 @@ This guide and rules has been edited for SomethingOS from [CrDroid ones](https:/
 ## Applying for Official
 
 - Meet all the quality requirements (described above)
-- Having a working build, fully working and public (On XDA for example), for at least 2 months.
+- Having a working build, fully working and public (On XDA for example).
 - Plan to keep and maintain the device
 
 Once you meet these conditions, contact @DylanAkp on telegram
