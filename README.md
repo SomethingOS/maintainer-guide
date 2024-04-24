@@ -3,7 +3,7 @@ This guide and rules has been edited for SomethingOS from [CrDroid ones](https:/
 
 - All maintainers must have knowledge about source control tools such as _git_ and _repo_.
 - All maintainers must release device sources **publicly** on Github, including common device tree (if present), device tree and kernel
-- Device tree and device specific sources need to be cloned via aospa.dependencies and be present on vendor_something
+- Device tree and device specific sources need to be cloned via aospa.dependencies and be present on aospa
 - Vendor is not mandatory due to possible proprietary code that can result in DMCA, but highly recommended also
 - All sources must be fully synced (pushed to GitHub) **prior to** every official build release
 - Device trees can be co-maintained
