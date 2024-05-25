@@ -71,6 +71,7 @@ Maintainers are free to use stock-extracted blobs, blobs from other devices or l
 ### Software:
 
 - Only production builds can be shipped (user/userdebug)
+- All official builds should be signed with your own keys
 - Official builds can be released as weekly, monthly or nightlies when needed but at least they must be released on every SomethingOS minor version update
 - Selinux can be permissive during initial bringup days, only in beta builds. It must be enforced in every official release after non-dt related source is deemed stable
 - Sepolicy must meet security standards, it must cover every system and vendor component (no random denials), however it must not contain any rules for 3rd party apps
